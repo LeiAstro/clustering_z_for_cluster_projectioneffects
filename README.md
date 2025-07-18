@@ -33,8 +33,8 @@ $$
 | `calc_wur_inputs.yml`                          | YAML configuration (paths, cosmology, binning, JK settings).          |
 | `calc_wur.py`                                  | Loads config, builds bins, performs pair counts, writes HDF5 outputs. |
 | `README.md`                                    | This document.                                                        |
-| `environment.yml` / `requirements.txt` *(add)* | Reproducible software environment (recommended; see below).           |
-| `LICENSE` *(add)*                              | Choose a license (e.g. MIT / BSD 3‑Clause).                           |
+| `environment.yml` / `requirements.txt`         | Reproducible software environment (recommended; see below).           |
+| `LICENSE`                                      | Choose a license (e.g. MIT / BSD 3‑Clause).                           |
 
 *(Rename the main script to something concise like `run_wur.py` for clarity.)*
 

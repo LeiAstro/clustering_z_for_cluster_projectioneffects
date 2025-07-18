@@ -2,7 +2,7 @@
 
 *Efficient estimation of line‑of‑sight projection / contamination around galaxy clusters via cross‑correlations with a spectroscopic reference sample.*
 
-This repository implements a **clustering redshift (w\_{ur}) stacking pipeline** tailored to measuring **projection effects in optical cluster catalogs** (e.g. redMaPPer). The code:
+This repository implements a **clustering redshift ($w\_{ur}$) stacking pipeline** tailored to measuring **projection effects in optical cluster catalogs** (e.g. redMaPPer). The code:
 
 * slices the cluster (member) sample into **narrow tomographic bins** inside **wide stacking bins**;
 * cross‑correlates (projected) unknown objects with a **spectroscopic reference sample** and its random catalog;

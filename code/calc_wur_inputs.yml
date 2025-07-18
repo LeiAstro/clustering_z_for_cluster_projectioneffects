@@ -1,0 +1,43 @@
+### ---------- Unknown (cluster‑member) sample ----------
+cluster_mem_path: "/lustre/work/client/users/lyang4/borah_scratch/sdss_dr8_redmapper/data/"
+cluster_mem_fname: "updated_zspec_median_newmatched_sdss_dr8_cluster_members.fit"   # FITS table of redMaPPer members
+
+### ----------- Set richness cut -----------
+richness_min: 20 ### Default is None
+richness_max: 500  ### Default is None
+
+### ---------- Reference (spectroscopic) sample ----------
+reference_path: "/lustre/work/client/users/lyang4/borah_scratch/data/SDSS/BOSS/"
+reference_gname: "galaxy_DR12v5_CMASSLOWZTOT_North.fits"          # CMASS+LOWZ North galaxies
+reference_rname: "random0_DR12v5_CMASSLOWZTOT_North.fits.gz"      # Corresponding random catalogue
+
+### ---------- Jackknife resampling ----------
+npatches: 100        # Number of spatial patches (default=120 in code)
+
+### ---------- Cosmology ----------
+H0:   67.66          # Hubble constant H₀ [km s⁻¹ Mpc⁻¹]
+Om0:  0.3111         # Matter density parameter Ωₘ₀
+
+### ---------- Wide redshift bins for stacking w_ur ----------
+wide_dz:        0.03   # Bin width
+zwide_start:    0.15   # Lower edge
+zwide_end:      0.21   # Upper edge
+num_zwide_bins: 2      # Number of wide bins in [zwide_start, zwide_end]
+
+### ---------- Narrow tomographic bins per w_ur measurement ----------
+narrow_tomo_dz: 0.002   # Width of each tomographic slice
+
+### ---------- Narrow reference‑sample (spectroscopic) bins ----------
+spec_dz:   0.003   # Width of each spectroscopic z‑bin
+zspec_min: 0.0     # Minimum z in reference sample
+zspec_max: 1.0     # Maximum z in reference sample
+
+### ---------- Physical‑scale aperture bins for pair counts ----------
+# These radii (in proper Mpc) will later be converted to angular θ bins
+rmin:        0.1     # Minimum radius  [Mpc]
+rmax:       10.0     # Maximum radius  [Mpc]
+num_rbins:   8       # Number of linear(Default) or logarithmically spaced bins between rmin and rmax
+spacing: "linear"    
+
+### ---------- Set num_processes (CPUs in a node) ----------
+N_CPUs: 80

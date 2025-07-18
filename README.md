@@ -160,7 +160,7 @@ signal = (wDuDr - wDuRr) / wDuRr
 
 ## 9. Visualization Example
 
-See the Jupyter notebook example: $\tt {stacking_and_mcmc_example.ipynb}$. 
+See the Jupyter notebook example: $\tt {stacking\_and\_mcmc\_example.ipynb}$. 
  
 ---
 

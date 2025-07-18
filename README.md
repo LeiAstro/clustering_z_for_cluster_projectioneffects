@@ -44,7 +44,7 @@ $$
 
 | Package           | Notes                                                         |
 | ----------------- | ------------------------------------------------------------- |
-| Python ≥ 3.8      | Tested with 3.8 (adjust as needed).                           |
+| Python ≥ 3.8      | Tested with 3.8.                                              |
 | `numpy`           | Vector math & arrays.                                         |
 | `astropy`         | Cosmology distances, FITS I/O.                                |
 | `h5py`            | Output container.                                             |

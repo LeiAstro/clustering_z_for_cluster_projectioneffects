@@ -153,14 +153,14 @@ signal = (wDuDr - wDuRr) / wDuRr
 | **Parallelism**      | Currently: joblib processes × Corrfunc threads (`nthreads=4`). To avoid oversubscription on smaller nodes, tune `nthreads` to 1 or reduce `N_CPUs`. |
 | **I/O**              | Large FITS reads happen once at startup. For huge catalogs, consider memory‑mapping & passing only views (see Issues / TODO).                       |
 | **Radial bins**      | Log bins capture scale dependence better; set `spacing: "log"` in YAML.                                                                             |
-| **Spectroscopic dz** | Smaller `spec_dz` gives finer structure in wur(z) but increases noise & runtime.                                                                |
+| **Spectroscopic dz** | Smaller `spec_dz` gives finer structure in `wur(z)` but increases noise & runtime.                                                                |
 | **Narrow tomo dz**   | Must evenly tile the wide bin to avoid partial last bin (current code includes the final partial edge if not exact—monitor for off‑by‑one).         |
 
 ---
 
 ## 9. Visualization Example
 
-See the Jupyter notebook example: $\tt {stacking_ and _mcmc _example.ipynb}$. 
+See the Jupyter notebook example: `stacking_and_mcmc_example.ipynb`. 
  
 ---
 
